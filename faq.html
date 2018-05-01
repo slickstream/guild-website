@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>Guild</title>
+  <meta name="description" content="Guild network">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      columns: white;
+      font-size: 18px;
+      background: #000;
+      color: white;
+    }
+
+    section,
+    header,
+    footer {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    article {
+      display: block;
+      background: white;
+      color: #292929;
+      padding: 20px 16px 50px;
+    }
+
+    h3 {
+      display: inline;
+      font-weight: bold;
+      margin: 0;
+      font-size: inherit;
+      font-size: 20px;
+    }
+
+    footer {
+      padding: 20px 16px;
+      text-align: right;
+      font-size: 16px;
+    }
+
+    a,
+    a:visited,
+    a:hover {
+      color: inherit;
+      outline: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 4px 12px;
+    }
+
+    a:hover {
+      box-shadow: 0 2px;
+    }
+
+    a.inline {
+      text-transform: none;
+      font-weight: normal;
+      padding: 0;
+      box-shadow: 0 1px;
+    }
+
+    a.imgLink {
+      padding: 0;
+      margin: 0;
+    }
+
+    a.imgLink:hover {
+      box-shadow: none;
+    }
+
+    h1 {
+      font-weight: normal;
+      font-size: 44px;
+      margin: 10px 0 20px;
+      text-transform: uppercase;
+    }
+
+    #banner {
+      padding: 0 16px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      min-height: 50px;
+    }
+
+    .flex {
+      -ms-flex: 1 1 0.000000001px;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-flex-basis: 0.000000001px;
+      flex-basis: 0.000000001px;
+    }
+
+    .textLogo {
+      display: block;
+      height: 36px;
+      padding: 7px 0;
+    }
+
+    .imgLogo {
+      display: none;
+      height: 30px;
+      padding: 7px 5px;
+    }
+
+    @media (max-width: 650px) {
+      h1 {
+        font-size: 36px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      body {
+        font-size: 16px;
+      }
+      #banner,
+      footer {
+        font-size: 14px;
+      }
+      #banner {
+        padding: 0 5px;
+      }
+      .textLogo {
+        display: none;
+      }
+      .imgLogo {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="banner">
+    <a href="/" class="imgLink">
+      <img alt="Guild network" class="textLogo" src="images/logo_512_white.png">
+      <img alt="Guild network" class="imgLogo" src="images/g1.png">
+    </a>
+    <div class="flex"></div>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/how.html">How it works</a>
+  </div>
+  <article>
+    <header>
+      <h1>FAQ</h1>
+    </header>
+    <section>
+      <h3>What is Guild?</h3>
+      <p>
+        Guild is a new internet service that works on behalf of its members to generate revenue from visitors to any of the member
+        websites. What
+        <a class="inline" href="https://medium.com/" target="_blank">Medium</a> is doing for writers who publish on Medium's site, we are doing for independent website publishers --
+        collecting money from viewers and distributing it to publishers.
+      </p>
+    </section>
+    <section>
+      <h3>Can anyone join?</h3>
+      <p>
+        Anyone with a website may apply for membership but only those that meet our standards will be admitted, and we reserve the
+        right to refuse membership to anyone even if they do meet those standards.
+      </p>
+    </section>
+    <section>
+      <h3>What standards does my site have to meet?</h3>
+      <p>
+        We apply a set of objective and subjective standards. The objective standards are based on an audit using Google's
+        <a class="inline" href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Lighthouse</a>
+        tool for performance, responsiveness, and other factors. For special cases, such as specialize interactive sites, we may
+        waive certain requirements. Our subjective standards are based mostly on a checklist covering things like offensive
+        content, plagiarism, accessibility, etc.
+      </p>
+    </section>
+    <section>
+      <h3>Once approved, is my membership guaranteed forever?</h3>
+      <p>
+        No. We will be frequently reviewing Guild member sites to ensure that they are continuing to meet our standards. If we uncover
+        problems, we will notify you and you may lose your membership.
+      </p>
+    </section>
+    <section>
+      <h3>Does this work for rich interactive content sites?</h3>
+      <p>
+        Yes. In fact we encourage sites to use the latest web technologies to create the best possible experience for visitors. You
+        are not constrained by many of the rules that ad networks impose on publisher sites. You are required, however, to
+        ensure that the Guild experience for visitors is not affected by your site -- i.e., that Guild paywall pages and
+        the Guild certificate tab are visible to visitors in the expected way.
+      </p>
+    </section>
+    <section>
+      <h3>How much will I earn?</h3>
+      <p>
+        A good starting point is to use your existing analytics to tell you how many unique monthly visitors your site has. If all
+        of these visitors paid for Guild access on your site, you would earn all of the money they paid for access (net of
+        fees).
+      </p>
+      <p>
+        Of course, some of your visitors will choose not to pay for access. Some of your visitors may have paid for access on a different
+        Guild site. And some of the visitor who paid on your site will visit other Guild sites. So your earnings will be
+        affected accordingly.
+      </p>
+    </section>
+    <section>
+      <h3>Will the access price for visitors change?</h3>
+      <p>
+        Yes. As the Guild grows, and therefore the value of an access pass grows along with it, we expect to increase the access
+        fees. Our goal is that as the Guild grows, earnings for all members should be growing modestly at the same time.
+      </p>
+    </section>
+    <section>
+      <h3>Why don't you offer a recurring subscription option for visitors?</h3>
+      <p>
+        We may eventually do that. But recurring transactions add complexity in a visitor's decision making process. And while Guild
+        pricing is changing, we concluded that it is premature to offer this option now.
+      </p>
+    </section>
+    <section>
+      <h3>Do you help me bring more visitors to my site?</h3>
+      <p>
+        Eventually we hope this will be the case, but don't count on it. As a Guild member, you will be working in a consortium with
+        other members. The Guild reputation will eventually result in consumers seeking out sites that are members. But it
+        is better for you to think about Guild membership as being a way to monetize the visitors you are already getting.
+      </p>
+    </section>
+    <section>
+      <h3>Why should I get paid the same as other members if my site's content is better?</h3>
+      <p>
+        We believe that the value of your content is reflected in the number of visitors you have and how engaged they are. This
+        is already reflected within your share of the Guild proceeds.
+      </p>
+    </section>
+    <section>
+      <h3>When and how do I get paid?</h3>
+      <p>
+        Distributions are calculated on the first working day on or after the 15th of each month and distributed promptly to members
+        using Paypal as long as their share is at least $5. Smaller amounts roll over to the next period.
+      </p>
+    </section>
+    <section>
+      <h3>Which pages should I designate to go inside the Guild?</h3>
+      <p>
+        It is up to you to decide which of your content should go "inside" the Guild. Typically your home page and other supporting
+        content will remain outside. You may prefer to put only your "premium" content pages inside the Guild to keep your
+        viewership high. Or you may prefer to put most of all of your content pages inside. It depends on the nature of your
+        content and your visitors.
+      </p>
+      <p>
+        We recommend that you start with only some of your most valuable content and see how your visitors respond. You can add more
+        pages later based on what you learn.
+      </p>
+    </section>
+    <section>
+      <h3>How many page views should I give away for free?</h3>
+      <p>
+        This is also up to you and will depend on your content and visitors. If your protected content is of very compelling value
+        to visitors, you may not want to give any of it away for free, especially if you have left a lot of content outside
+        of the Guild as examples for visitors to evaluate your content. On the other hand, as you put more of your content
+        inside the Guild, you will probably want to increase the number of free views so that visitors can get a representative
+        sampling of your content before being faced with a payment decision.
+      </p>
+    </section>
+    <section>
+      <h3>Who runs Guild?</h3>
+      <p>
+        Guild was created and is operated by Hivepoint, Inc., a startup company located in Palo Alto, California.
+      </p>
+    </section>
+    <section>
+      <h3>How do I get help when I need it?</h3>
+      <p>
+        Contact us via email at
+        <a class="inline" href="mailto:support@guild.network">support@guild.network</a>.
+      </p>
+    </section>
+  </article>
+  <footer>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/how.html">How it works</a>
+  </footer>
+</body>
+
+</html>
