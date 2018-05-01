@@ -137,8 +137,11 @@
       cursor: pointer;
     }
 
-    section {
+    .fullPage {
       min-height: 100vh;
+    }
+
+    section {
       font-size: 26px;
     }
 
@@ -147,6 +150,13 @@
       padding: 10px 30px;
       background: white;
       text-align: center;
+    }
+
+    .contentPanel {
+      box-sizing: border-box;
+      padding: 60px 10px;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .metaSection {
@@ -192,6 +202,31 @@
       color: inherit;
       text-decoration: none;
       box-shadow: 0 1px;
+    }
+
+    a.btn {
+      box-shadow: none !important;
+      margin: 5px 5px 5px 0;
+      display: inline-block;
+    }
+
+    a button {
+      margin: 0;
+      font-size: 18px;
+      border-width: 5px;
+    }
+
+    .glass {
+      background: rgba(0, 0, 0, 0.65);
+      color: white;
+    }
+
+    .glass h3 {
+      color: #000;
+    }
+
+    .moreSection {
+      background: #fff;
     }
 
     @media (max-width: 1024px) {
@@ -272,7 +307,7 @@
         </div>
       </div>
     </header>
-    <section class="horizontal layout">
+    <section class="horizontal layout fullPage">
       <div class="flex vertical layout metaSection">
         <div class="flex"></div>
         <div style="text-align: center;">
@@ -296,9 +331,7 @@
             <li>Subscriptions work only for the largest publishers.</li>
           </ul>
           <div>
-            <button>
-              <div>Guild is the answer</div>
-            </button>
+            <button>Guild is the answer</button>
             <div>
               <img style="cursor: pointer;" src="images/more.png">
             </div>
@@ -307,8 +340,7 @@
         <div class="flex"></div>
       </div>
     </section>
-
-    <section class="horizontal layout">
+    <section class="horizontal layout fullPage">
       <div class="flex vertical layout metaSection">
         <div class="flex"></div>
         <div style="text-align: center;">
@@ -328,9 +360,7 @@
             want.
           </p>
           <div>
-            <button>
-              <div>Join the Guild</div>
-            </button>
+            <button>Join the Guild</button>
             <div>
               <img style="cursor: pointer;" src="images/more.png">
             </div>
@@ -339,11 +369,43 @@
         <div class="flex"></div>
       </div>
     </section>
+    <section class="glass">
+      <div class="contentPanel">
+        <h3>Join the Guild and share the wealth</h3>
+        <p>
+          It's easy to get started. Register your site to get an embed code and you start earning as soon as your site is validated.
+        </p>
+        <p>
+          The Guild network is in private beta. If you're interested in joining, email us at
+          <a href="mailto:hello@guild.network">hello@guild.network</a>
+        </p>
+      </div>
+    </section>
+    <section class="moreSection">
+      <div class="contentPanel">
+        <h3 style="margin: 0;">Learn more</h3>
+        <p>
+          <a href="/how" class="btn">
+            <button>How it works</button>
+          </a>
+          <a href="/faq" class="btn">
+            <button>FAQs</button>
+          </a>
+          <a href="/about" class="btn">
+            <button>Who's behind Guild</button>
+          </a>
+        </p>
+        <p>Made with love in Palo Alto, California.
+          <br>Follow
+          <a href="https://twitter.com/YourGuild" target="_blank">Guild on Twitter</a>.
+        </p>
+      </div>
+    </section>
   </article>
 
   <script>
     // (() => {
-    //   document.getElementById('video').playbackRate = 1;
+    //   document.getElementById('video').playbackRate = 0.8;
     // })();
   </script>
 </body>
