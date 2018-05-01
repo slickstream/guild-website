@@ -300,14 +300,14 @@
         </div>
         <h2>The network for premium content on the web</h2>
         <div id="moreIcon">
-          <img src="images/more.png">
+          <img onclick="to1()" src="images/more.png">
           <div>
-            <div class="moreText">scroll for more</div>
+            <div class="moreText" onclick="to1()">scroll for more</div>
           </div>
         </div>
       </div>
     </header>
-    <section class="horizontal layout fullPage">
+    <section id="sec1" class="horizontal layout fullPage">
       <div class="flex vertical layout metaSection">
         <div class="flex"></div>
         <div style="text-align: center;">
@@ -331,16 +331,16 @@
             <li>Subscriptions work only for the largest publishers.</li>
           </ul>
           <div>
-            <button>Guild is the answer</button>
+            <button onclick="to2()">Guild is the answer</button>
             <div>
-              <img style="cursor: pointer;" src="images/more.png">
+              <img onclick="to2()" style="cursor: pointer;" src="images/more.png">
             </div>
           </div>
         </div>
         <div class="flex"></div>
       </div>
     </section>
-    <section class="horizontal layout fullPage">
+    <section id="sec2" class="horizontal layout fullPage">
       <div class="flex vertical layout metaSection">
         <div class="flex"></div>
         <div style="text-align: center;">
@@ -360,16 +360,16 @@
             want.
           </p>
           <div>
-            <button>Join the Guild</button>
+            <button onclick="to3()">Join the Guild</button>
             <div>
-              <img style="cursor: pointer;" src="images/more.png">
+              <img onclick="to3()" style="cursor: pointer;" src="images/more.png">
             </div>
           </div>
         </div>
         <div class="flex"></div>
       </div>
     </section>
-    <section class="glass">
+    <section id="sec3" class="glass">
       <div class="contentPanel">
         <h3>Join the Guild and share the wealth</h3>
         <p>
@@ -404,9 +404,45 @@
   </article>
 
   <script>
-    // (() => {
-    //   document.getElementById('video').playbackRate = 0.8;
-    // })();
+    function to1() {
+      scrollTo(1);
+    }
+    function to2() {
+      scrollTo(2);
+    }
+    function to3() {
+      scrollTo(3);
+    }
+    function scrollTo(i) {
+      const section = document.getElementById('sec' + i);
+      if (section) {
+        _scrollTo(section, 500);
+      }
+    }
+    function _scrollTo(section, duration) {
+      const e = document.scrollingElement || document.documentElement;
+      const start = e.scrollTop;
+      const change = (section.getBoundingClientRect().y || section.getBoundingClientRect().top);
+      const startDate = +new Date();
+      const easeIn = (t, b, c, d) => {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      };
+      const animate = () => {
+        const currentDate = +new Date();
+        const currentTime = currentDate - startDate;
+        e.scrollTop = parseInt(easeIn(currentTime, start, change, duration));
+        if (currentTime < duration) {
+          requestAnimationFrame(animate);
+        }
+        else {
+          e.scrollTop = start + change;
+        }
+      };
+      animate();
+    }
   </script>
 </body>
 
