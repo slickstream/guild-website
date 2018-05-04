@@ -76,7 +76,7 @@
 
     h2 {
       font-weight: bold;
-      font-size: 31px;
+      font-size: 29px;
       margin: 0;
     }
 
@@ -166,15 +166,6 @@
       color: white;
     }
 
-    ul {
-      text-align: left;
-      margin: 0;
-    }
-
-    li {
-      margin: 15px 0;
-    }
-
     button {
       background: none;
       border: 8px solid;
@@ -217,7 +208,7 @@
     }
 
     .glass {
-      background: rgba(0, 0, 0, 0.65);
+      background: rgba(0, 0, 0, 0.71);
       color: white;
     }
 
@@ -256,7 +247,7 @@
         padding: 15px 30px 0;
       }
       h2 {
-        font-size: 20px;
+        font-size: 18px;
       }
       h3 {
         font-size: 22px;
@@ -288,7 +279,7 @@
 </head>
 
 <body>
-  <video id="video" src="videos/guildbg.mp4" playsinline autoplay muted loop></video>
+  <video id="video" poster="images/poster.jpg" src="videos/guildbg.mp4" playsinline autoplay muted loop></video>
   <article>
     <header class="vertical layout">
       <div class="flex">
@@ -298,7 +289,7 @@
         <div class="logoContainer">
           <img alt="Guild network" class="textLogo" src="images/logo_512.png">
         </div>
-        <h2>The network for premium content on the web</h2>
+        <h2>A network of high quality websites funded by viewers</h2>
         <div id="moreIcon">
           <img alt="More" onclick="to1()" src="images/more.png">
           <div>
@@ -312,7 +303,7 @@
         <div class="flex"></div>
         <div style="text-align: center;">
           <div>
-            <img alt="Guild logo" class="sqlogo" src="images/g1.png">
+            <img alt="Guild logo" class="sqlogo" src="images/sqlogo.png">
           </div>
           <div style="padding: 20px 0 0; font-size: 20px;">
             <span style="color: #ffe963; font-weight: bold;">Guild:</span>
@@ -324,12 +315,12 @@
       </div>
       <div class="contentSection flex vertical layout">
         <div class="flex"></div>
-        <div>
-          <h3>The Problem</h3>
-          <ul>
-            <li>Publishers of great content want to be paid fairly for their work and advertising hasn't done the job</li>
-            <li>Subscriptions work only for the largest publishers.</li>
-          </ul>
+        <div style="max-width: 650px; margin: 0 auto;">
+          <h3>Guild is a collection of websites whose creators hold themselves to a higher standard.</h3>
+          <p>
+            With that higher standard should come higher reward. But advertising doesn't deliver without compromise and subscriptions
+            only work for the largest publishers.
+          </p>
           <div>
             <button onclick="to2()">Guild is the answer</button>
             <div>
@@ -352,15 +343,14 @@
       </div>
       <div class="contentSection flex vertical layout">
         <div class="flex"></div>
-        <div>
+        <div style="max-width: 650px; margin: 0 auto;">
           <h3>There's strength in numbers!</h3>
           <p>
-            By using a single paywall that spans many different websites, and an
-            <em>innovative pricing scheme</em>, consumers experience much less friction in paying for the premium content they
-            want.
+            Guild offers visitors a single monthly pass valid at all its websites providing access to the best of the web with minimal
+            friction and maximum value.
           </p>
           <div>
-            <button onclick="to3()">Join the Guild</button>
+            <button onclick="to3()">Have a great website? Try Guild</button>
             <div>
               <img alt="More" onclick="to3()" style="cursor: pointer;" src="images/more.png">
             </div>
@@ -371,12 +361,17 @@
     </section>
     <section id="sec3" class="glass">
       <div class="contentPanel">
-        <h3>Join the Guild and share the wealth</h3>
+        <h3>Join The Guild and get rewarded fairly</h3>
         <p>
-          It's easy to get started. Register your site to get an embed code and you start earning as soon as your site is validated.
+          It's easy to get started. Register to get an embed code to add to your site. Once approved, start collecting your share of
+          the monthly pass fees.
         </p>
         <p>
-          The Guild network is in private beta. If you're interested in joining, email us at
+          The Guild network is in private beta. We’ve made trying Guild simple. You choose what portion of your content and traffic
+          to include in the trial and in return we guarantee some level of income to offset your risk.
+        </p>
+        <p>
+          Interested? Email us at
           <a href="mailto:hello@guild.network">hello@guild.network</a>
         </p>
       </div>
